@@ -24,7 +24,7 @@ app.get('/page5', function(req, res){
   res.sendFile(path.join(__dirname, 'views/page5.html'));
 });
 app.get('*', function(req, res){
-  res.status(Index3).sendFile(path.join(__dirname, 'views/Index3.html'));
+  res.status(Index3).sendFile(path.join(__dirname, 'views/page3.html'));
 });
 //express server listen
 var server = app.listen(app.get('port'), function(){
