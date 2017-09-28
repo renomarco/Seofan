@@ -23,6 +23,9 @@ app.get('/page4', function(req, res){
 app.get('/page5', function(req, res){
   res.sendFile(path.join(__dirname, 'views/page5.html'));
 });
+app.get('/page6', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/page6.html'));
+});
 app.get('*', function(req, res){
   res.status(Index3).sendFile(path.join(__dirname, 'views/page3.html'));
 });
